@@ -1,7 +1,23 @@
 class Queue {
-  // Hey! Rewrite in the new style. Your code will wind up looking very similar,
-  // but try not not reference your old code in writing the new style.
   constructor() {
+    this.storage = {};
+    this.firstInd = 0;
+    this.lastInd = -1;
   }
 
+  enqueue(value) {
+    this.storage[this.lastInd + 1] = value;
+    this.lastInd++;
+  }
+
+  dequeue() {
+    var result = this.storage[this.firstInd];
+    delete this.storage[this.firstInd];
+    this.firstInd++;
+    return result;
+  }
+
+  size() {
+    return Object.keys(this.storage).length;
+  }
 }
