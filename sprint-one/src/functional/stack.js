@@ -42,12 +42,12 @@ var Stack = function() {
   return someInstance;
 };
 
-var newStack = Stack();
+// var newStack = Stack();
 
-newStack.push('word');
-newStack.push('word2');
-newStack.push('word3');
-console.log(newStack.storage);
-newStack.pop();
-console.log(newStack.storage);
+// newStack.push('word');
+// newStack.push('word2');
+// newStack.push('word3');
+// console.log(newStack.storage);
+// newStack.pop();
+// console.log(newStack.storage);
 
