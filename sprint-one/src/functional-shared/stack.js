@@ -26,12 +26,3 @@ stackMethods.size = function() {
   return Object.keys(this.storage).length;
 };
 
-var newStack = Stack();
-
-newStack.push('word');
-newStack.push('word2');
-newStack.push('word3');
-console.log(newStack.storage);
-newStack.pop();
-console.log(newStack.storage);
-
